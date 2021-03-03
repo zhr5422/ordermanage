@@ -1,0 +1,120 @@
+@import '~antd/es/style/themes/default.less';
+
+.extraContentSearch {
+  width: 170px;
+  margin-left: 16px;
+}
+
+.extraControl {
+  // display: block;
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: @screen-sm) {
+  .extraContentSearch {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .headerInfo {
+    margin-bottom: 16px;
+
+    & > em {
+      display: none;
+    }
+  }
+
+  .extraControl {
+    // display: block;
+    margin-left: 10px;
+    margin-bottom: 8px;
+  }
+}
+
+
+.listContent {
+  font-size: 0;
+
+  .listContentItem {
+    display: inline-block;
+    margin-left: 40px;
+    color: @text-color-secondary;
+    font-size: @font-size-base;
+    vertical-align: middle;
+
+    > span {
+      line-height: 20px;
+    }
+
+    > p {
+      margin-top: 4px;
+      margin-bottom: 0;
+      line-height: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-xs) {
+  .ant-list-item-content {
+    display: block;
+    flex: none;
+    width: 100%;
+  }
+
+  .listContent {
+    margin-left: 0;
+
+    & > div {
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .listContent {
+    & > div {
+      display: block;
+    }
+
+    & > div:last-child {
+      top: 0;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-lg) and (min-width: @screen-md) {
+  .listContent {
+    & > div {
+      display: block;
+    }
+
+    & > div:last-child {
+      top: 0;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-xl) {
+  .listContent {
+    & > div {
+      margin-left: 24px;
+    }
+
+    & > div:last-child {
+      top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .listContent {
+    text-align: right;
+
+    & > div:last-child {
+      top: 0;
+    }
+  }
+}
